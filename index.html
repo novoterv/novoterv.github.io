@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Novoterv.com</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+
+      <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+  </head>
+  <body class="loading">
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+   	<div id="preload">
+     	<img src="images/bcg_slide-2.png">
+     	<img src="img/bcg_slide-3.jpg">
+     	<img src="img/bcg_slide-4.jpg">
+   	</div>
+
+   	<main>
+
+      <section id="slide-1" class="homeSlide">
+      	<div class="bcg">
+        	<div class="hsContainer">
+		    		<div class="hsContent">
+			    		<img src="images/Novotervlogo.png" id="initial"></img>
+              <nav class="navigation">
+                <ul>
+                  <a href="#Rólunk">
+                  <li>rólunk</li></a>
+                  <a href="#Kapcsolat">
+                  <li>kapcsolat</li></a>
+                </ul>
+              </nav>
+             </div>
+          </div>
+        </div>
+      </section>
+
+	    <section id="slide-2" class="homeSlide">
+        <a name="Rólunk">
+	    	<div class="bcg">
+		    	<div class="hsContainer">
+		    		<div class="hsContent">
+              <h1>Rólunk</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		    		</div>
+	        	</div>
+	    	</div>
+	    </section>
+
+			<section id="slide-3" class="homeSlide">
+        <a name="Kapcsolat">
+				<div class="bcg">
+			    	<div class="hsContainer">
+		    			<div class="hsContent">
+                <h1>Kapcsolat</h1>
+                <p>
+                  <i class="fa fa-user fa-fw fa-lg"></i>
+                  Erhardt Péter</br>
+                  <i class="fa fa-phone-square fa-fw fa-lg"></i>
+                  +36 30 475 7376</br>
+                  <i class="fa fa-phone fa-fw fa-lg"></i>
+                  +36 1 250 7964</br>
+                  <i class="fa fa-send-o fa-fw fa-lg"></i>
+                  <a class="e-mail" href="mailto:novoterv@t-online.com">novoterv@t-online.com</a></br>
+                  <i class="fa fa-map-marker fa-fw fa-lg"></i>
+                  1073 Budapest Szépvölgyi út 111.
+                </p>
+                <div id="map">
+                </div>
+			    		</div>
+			    	</div>
+			    </div>
+			</section>
+
+      </main>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="js/imagesloaded.js"></script>
+      <script src="js/skrollr.js"></script>
+      <script src="js/_main.js"></script>
+
+      <script>
+        function initializeMap() {
+          var mapCanvas = document.getElementById('map');
+          var mapOptions = {
+            center: new google.maps.LatLng(47.5316159, 19.0176216),
+            zoom: 15,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          }
+          var map = new google.maps.Map(mapCanvas, mapOptions);
+          var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(47.5316159, 19.0176216),
+            map: map,
+            title: 'Novoterv'
+          });
+        }
+      </script>
+
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ8wgItM8WvjT4fzqDNySCSUHreLrdZZs&callback=initializeMap">
+      </script>
+
+  </body>
+</html>
