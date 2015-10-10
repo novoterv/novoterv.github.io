@@ -135,7 +135,7 @@ main {
 }
 
 .hsContainer {
-	width: 100%;
+	width: 100vw;
 	height: 100%;
 	overflow: hidden;
 	position: relative;
@@ -168,7 +168,6 @@ main {
   font-weight: 300;
 }
 .hsContent a {
-	color: #22211f;
 	text-decoration: underline;
 }
 
@@ -237,7 +236,6 @@ a.e-mail:hover {
 
 
 #map {
-  width: 700px;
   height: 300px;
   margin-top: 30px;
 }
@@ -354,8 +352,27 @@ a.e-mail:hover {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 900px) {
+    .navigation a {
+        margin: 10px;
+    }
+
+    .hsContent {
+        top: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+    }
+
+    #slide-1 .hsContent {
+        width: 80vw;
+        padding: 10px;
+    }
+
+    #slide-3 .hsContent {
+        line-height: 1.9;
+    }
 }
 
 @media print,
